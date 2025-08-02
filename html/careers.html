@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>creative careers | STUST College of Digital Design</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="careers.css"/>
+</head>
+
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg fixed-top navbar-dark transparent-navbar">
+  <div class="container">
+    <a href="index.html">
+      <img src="./img/LOGO.png">
+    </a>
+
+    <div class="hamburger" id="hamburger">&#9776;</div>
+
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        
+        <!-- Desktop Menu Items -->
+        <div class="dropdown-wrapper">
+          <div class="hover-zone">
+            <div class="dropdown-toggle">Academics</div>
+            <div class="dropdown-menu">
+              <div class="menu-left">
+                <a href="AcademicsU.html" class="menu-item"><strong>Undergraduate Degree</strong></a>
+                <a href="UDIC.html" class="menu-item">Department of Information and Communication</a>
+                <a href="#link2" class="menu-item">Visual Communication Design</a>
+                <a href="#link2" class="menu-item">Multimedia and Entertainment Science</a>
+                <a href="#link2" class="menu-item">Creative Product Design</a>
+                <a href="#link2" class="menu-item">Popular Music Industry Dept</a>
+              </div>
+              <div class="menu-right">
+                <a href="AcademicsP.html" class="menu-item"><strong>Postgraduate Degree</strong></a>
+                <a href="#link2" class="menu-item">Department of Information and Communication</a>
+                <a href="#link2" class="menu-item">Visual Communication Design</a>
+                <a href="#link2" class="menu-item">Multimedia and Entertainment Science</a>
+                <a href="#link2" class="menu-item">Creative Product Design</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+         <div class="dropdown-wrapper">
+          <div class="hover-zone">
+            <div class="dropdown-toggle">Admissions</div>
+            <div class="dropdown-menu">
+              <div class="menu-left">
+                <a href="How to apply.html" class="menu-item">How to apply</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="dropdown-wrapper">
+          <div class="hover-zone">
+            <div class="dropdown-toggle">Student ioto</div>
+            <div class="dropdown-menu">
+              <div class="menu-left">
+                <a href="success.html" class="menu-item">Students' success</a>
+                <a href="careers.html" class="menu-item">creative careers</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="dropdown-wrapper">
+          <div class="hover-zone">
+            <div class="dropdown-toggle">About</div>
+            <div class="dropdown-menu">
+              <div class="menu-left">
+                <a href="index.html#about" class="menu-item">History / Mission and Vision</a>
+                <a href="Dean.html" class="menu-item">Dean</a>
+                <a href="index.html#icon" class="menu-item">Other faculty</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Mobile Menu Overlay -->
+<div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobileMenu">
+  <div class="menu-section">
+    <div class="menu-title" data-toggle="academics">Academics</div>
+    <div class="submenu" id="academics">
+      <div class="menu-title" data-toggle="undergrad">Undergraduate Degree</div>
+      <div class="submenu" id="undergrad">
+        <a href="UDIC.html">Department of Information and Communication</a>
+        <a href="#">Visual Communication Design</a>
+        <a href="#">Multimedia and Entertainment Science</a>
+        <a href="#">Creative Product Design</a>
+        <a href="#">Popular Music Industry Dept</a>
+      </div>
+      <div class="menu-title" data-toggle="postgrad">Postgraduate Degree</div>
+      <div class="submenu" id="postgrad">
+        <a href="#">Department of Information and Communication</a>
+        <a href="#">Visual Communication Design</a>
+        <a href="#">Multimedia and Entertainment Science</a>
+        <a href="#">Creative Product Design</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="menu-section">
+    <div class="menu-title" data-toggle="academics2">Admissions</div>
+    <div class="submenu" id="academics2">
+      <div class="menu-title" data-toggle="undergrad2">Undergraduate Degree</div>
+      <div class="submenu" id="undergrad2">
+        <a href="https://webap.stust.edu.tw/IntStudWeb/Login.aspx">How to apply</a>
+        <a href="#">Application Requirements</a>
+        <a href="#">Tuition and Aid</a>
+      </div>
+      <div class="menu-title" data-toggle="postgrad2">Postgraduate Degree</div>
+      <div class="submenu" id="postgrad2">
+        <a href="https://webap.stust.edu.tw/IntStudWeb/Login.aspx">How to apply</a>
+        <a href="#">Application Requirements</a>
+        <a href="#">Tuition and Aid</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="menu-section">
+    <div class="menu-title" data-toggle="studentioto">Student ioto</div>
+    <div class="submenu" id="studentioto">
+      <a href="success.html">Students' success</a>
+      <a href="#">creative careers</a>
+    </div>
+  </div>
+
+  <div class="menu-section">
+    <div class="menu-title" data-toggle="studentioto2">About</div>
+    <div class="submenu" id="studentioto2">
+      <a href="index.html#about">History / Mission and Vision</a>
+      <a href="Dean.html">Dean</a>
+      <a href="index.html#icon">Other faculty</a>
+    </div>
+  </div>
+</div>
+
+
+<script>
+  // 漢堡鍵切換手機選單
+document.getElementById("hamburger").addEventListener("click", () => {
+  document.getElementById("mobileMenu").classList.toggle("active");
+  document.getElementById("mobileMenuOverlay").classList.toggle("active");
+});
+
+// 點擊遮罩層關閉菜單
+document.getElementById("mobileMenuOverlay").addEventListener("click", () => {
+  document.getElementById("mobileMenu").classList.remove("active");
+  document.getElementById("mobileMenuOverlay").classList.remove("active");
+});
+
+// 手機選單中可點擊展開子選單
+document.querySelectorAll('.mobile-menu .menu-title[data-toggle]').forEach(title => {
+  title.addEventListener('click', () => {
+    const submenuId = title.getAttribute('data-toggle');
+    const submenu = document.getElementById(submenuId);
+    if (submenu) {
+      submenu.classList.toggle('active');
+    }
+  });
+});
+</script>
+
+
+
+
+<!-- 首頁照片輪播 -->
+<header>
+  <!-- 首頁照片輪播速度 -->
+  <div id="heroCarousel" class="carousel slide carousel-fade" data-ride="carousel" data-interval="2500" data-pause="false">
+    <div class="carousel-inner">
+      <!-- Slide 1 -->
+      <div class="carousel-item active">
+        <img src="./img/8440954879_4b2b73f65d_o.jpg" class="d-block w-100" alt="Slide 1">
+        <div class="carousel-caption d-none d-md-block">
+          <h1 class="display-4 font-weight-bold">PLAN. LAUNCH. GROW.</h1>
+          <p class="lead">We are team of talented designers making websites with Bootstrap</p>
+        </div>
+      </div>
+      <!-- Slide 2 -->
+      <div class="carousel-item">
+        <img src="./img/cover.jpg" class="d-block w-100" alt="Slide 2">
+        <div class="carousel-caption d-none d-md-block">
+          <h1 class="display-4 font-weight-bold">Design. Inspire. Impact.</h1>
+          <p class="lead">Build stunning websites with speed and ease.</p>
+        </div>
+      </div>
+      <!-- Slide 3 -->
+      <div class="carousel-item">
+        <img src="./img/trans-img.jpg" class="d-block w-100" alt="Slide 3">
+        <div class="carousel-caption d-none d-md-block">
+          <h1 class="display-4 font-weight-bold">Innovate. Create. Deliver.</h1>
+          <p class="lead">Empowering digital creatives through technology.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+
+<!-- Scripts -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  // Scroll detection for navbar background
+  window.addEventListener('scroll', function () {
+    const navbar = document.querySelector('.navbar');
+    if (window.scrollY > 50) {
+      navbar.classList.add('navbar-scrolled');
+    } else {
+      navbar.classList.remove('navbar-scrolled');
+    }
+  });
+</script>
+
+
+<!-- 資傳 -->
+<header class="section-header">
+  <div class="container">
+    <h1>Future Careers in Digital Design</h1>
+  </div>
+</header>
+  <div class="section">
+    <p>
+      Our design graduates have diverse career paths, especially within the 
+      growing digital and creative industries in Taiwan. They can pursue careers 
+      in product design, visual communication, digital media, design management, 
+      or related fields. The curriculum emphasizes practical skills, interdisciplinary 
+      learning, and international perspectives, preparing students for various roles in 
+      design and technology. </p>
+  </div>
+
+  <div class="section feature-section">
+    <div class="feature-text">
+      <h3>Specific Career Paths :</h3>
+      <h5><strong>Digital Media Design :</strong></h5>
+      <p>
+        This field offers roles in digital broadcasting, cultural aesthetics, the 
+        entertainment industry, information and communication design, and e-learning. 
+      </p>
+
+      <h5><strong>Design Management :</strong></h5>
+      <p>
+        Students can pursue careers in design strategy, marketing, and management within 
+        design-related companies.  
+      </p>
+
+      <h5><strong>Product Design :</strong></h5>
+      <p>
+        Graduates can become product designers, industrial designers, UX/UI designers, 
+        design managers, or creative directors. 
+      </p>
+
+      <h5><strong>Visual Communication Design :</strong></h5>
+      <p>
+        Opportunities include graphic design, package design, information design, 
+        interaction design, and animation design.  
+      </p>
+
+       <p class="ht">Other Areas :</p>
+      <p>
+        With the integration of technology, STUST design 
+        graduates can also find roles in fields like :  
+      </p>
+      <ul>
+        <li><strong>Medical Instrument Design : </strong>Biomedical engineering firms offer opportunities in medical device design, software development, and research related to physiological signals and medical informatics. </li>
+        <li><strong>Semiconductor and Optoelectronics : </strong>STUST's Department of Semiconductor and Electro-Optical Engineering prepares students for roles in semiconductor manufacturing, display technology, and optoelectronics. </li>
+        <li><strong>Creative Industries : </strong>Taiwan's strong emphasis on the creative and design industries provides opportunities in game design, digital entertainment, and multimedia production.</li>
+      </ul>
+
+      <p class="ht">Future Trends :</p>
+      <ul>
+        <li><strong>Digital Transformation : </strong>The increasing integration of digital technologies across various industries will continue to drive demand for designers with strong digital skills. </li>
+        <li><strong>AI and Human-Computer Interaction : </strong>STUST's focus on AI applications, human-computer interaction, and robotics positions its graduates for roles in these emerging fields. </li>
+        <li><strong>Sustainability and Design Thinking : </strong>Growing awareness of sustainability will likely increase demand for designers who can integrate sustainable practices into product and system design. </li>
+      </ul>
+    </div>
+
+    <div class="feature-image">
+      <img src="./img/未來出路.jpg" alt="Program Features and Career Data" />
+      <a class="link-button" href="#">More</a>
+    </div>
+  </div>
+
+
+<!-- 頁尾 -->
+ <div class="footer-overlay">
+    <div class="footer-content">
+
+      <!-- 聯絡我們 -->
+      <div class="footer-column">
+        <h3>Contact Us</h3>
+        <p>No. 1, Nantai Street, Yongkang District, Tainan City 71005, Taiwan</p>
+        <p>Tel: +886-6-2533131 ext.7001</p>
+        <p><a href="mailto:cdd@stust.edu.tw">cdd@stust.edu.tw</a></p>
+      </div>
+
+      <!-- 辦公時間 -->
+      <div class="footer-column">
+        <h3>Office Hours</h3>
+        <p>Monday to Friday, 8:30 AM – 5:30 PM</p>
+      </div>
+
+      <!-- 單位資訊 -->
+      <div class="footer-column">
+        <h3>College of Digital Design, STUST</h3>
+        <p>Brick Building W805</p>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    Copyright © Southern Taiwan University of Science and Technology All Rights Reserved.
+    ｜ <a href="https://www.stust.edu.tw/tc/privacy" target="_blank">Privacy Policy</a>
+  </div>
+</body>
+</html>

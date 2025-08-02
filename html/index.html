@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Academics | STUST College of Digital Design</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg fixed-top navbar-dark transparent-navbar">
+  <div class="container">
+    <a href="index.html">
+      <img src="./img/LOGO.png">
+    </a>
+
+    <div class="hamburger" id="hamburger">&#9776;</div>
+
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        
+        <!-- Desktop Menu Items -->
+        <div class="dropdown-wrapper">
+          <div class="hover-zone">
+            <div class="dropdown-toggle">Academics</div>
+            <div class="dropdown-menu">
+              <div class="menu-left">
+                <a href="AcademicsU.html" class="menu-item"><strong>Undergraduate Degree</strong></a>
+                <a href="DIC.html" class="menu-item">Department of Information and Communication</a>
+                <a href="#link2" class="menu-item">Visual Communication Design</a>
+                <a href="#link2" class="menu-item">Multimedia and Entertainment Science</a>
+                <a href="#link2" class="menu-item">Creative Product Design</a>
+                <a href="#link2" class="menu-item">Popular Music Industry Dept</a>
+              </div>
+              <div class="menu-right">
+                <a href="AcademicsP.html" class="menu-item"><strong>Postgraduate Degree</strong></a>
+                <a href="#link2" class="menu-item">Department of Information and Communication</a>
+                <a href="#link2" class="menu-item">Visual Communication Design</a>
+                <a href="#link2" class="menu-item">Multimedia and Entertainment Science</a>
+                <a href="#link2" class="menu-item">Creative Product Design</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="dropdown-wrapper">
+          <div class="hover-zone">
+            <div class="dropdown-toggle">Admissions</div>
+            <div class="dropdown-menu">
+              <div class="menu-left">
+                <a href="How to apply.html" class="menu-item">How to apply</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="dropdown-wrapper">
+          <div class="hover-zone">
+            <div class="dropdown-toggle">Student ioto</div>
+            <div class="dropdown-menu">
+              <div class="menu-left">
+                <a href="success.html" class="menu-item">Students' success</a>
+                <a href="careers.html" class="menu-item">creative careers</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="dropdown-wrapper">
+          <div class="hover-zone">
+            <div class="dropdown-toggle">About</div>
+            <div class="dropdown-menu">
+              <div class="menu-left">
+                <a href="#about" class="menu-item">History / Mission and Vision</a>
+                <a href="Dean.html" class="menu-item">Dean</a>
+                <a href="#icon" class="menu-item">Other faculty</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Mobile Menu Overlay -->
+<div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobileMenu">
+  <div class="menu-section">
+    <div class="menu-title" data-toggle="academics">Academics</div>
+    <div class="submenu" id="academics">
+      <div class="menu-title" data-toggle="undergrad">Undergraduate Degree</div>
+      <div class="submenu" id="undergrad">
+        <a href="DIC.html">Department of Information and Communication</a>
+        <a href="#">Visual Communication Design</a>
+        <a href="#">Multimedia and Entertainment Science</a>
+        <a href="#">Creative Product Design</a>
+        <a href="#">Popular Music Industry Dept</a>
+      </div>
+      <div class="menu-title" data-toggle="postgrad">Postgraduate Degree</div>
+      <div class="submenu" id="postgrad">
+        <a href="#">Department of Information and Communication</a>
+        <a href="#">Visual Communication Design</a>
+        <a href="#">Multimedia and Entertainment Science</a>
+        <a href="#">Creative Product Design</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="menu-section">
+    <div class="menu-title" data-toggle="academics2">Admissions</div>
+    <div class="submenu" id="academics2">
+      <div class="menu-title" data-toggle="undergrad2">Undergraduate Degree</div>
+      <div class="submenu" id="undergrad2">
+        <a href="https://webap.stust.edu.tw/IntStudWeb/Login.aspx">How to apply</a>
+        <a href="#">Application Requirements</a>
+        <a href="#">Tuition and Aid</a>
+      </div>
+      <div class="menu-title" data-toggle="postgrad2">Postgraduate Degree</div>
+      <div class="submenu" id="postgrad2">
+        <a href="https://webap.stust.edu.tw/IntStudWeb/Login.aspx">How to apply</a>
+        <a href="#">Application Requirements</a>
+        <a href="#">Tuition and Aid</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="menu-section">
+    <div class="menu-title" data-toggle="studentioto">Student ioto</div>
+    <div class="submenu" id="studentioto">
+      <a href="success.html">Students' success</a>
+      <a href="#">creative careers</a>
+    </div>
+  </div>
+
+  <div class="menu-section">
+    <div class="menu-title" data-toggle="studentioto2">About</div>
+    <div class="submenu" id="studentioto2">
+      <a href="#">History / Mission and Vision</a>
+      <a href="Dean.html">Dean</a>
+      <a href="#">Other faculty</a>
+    </div>
+  </div>
+</div>
+
+
+<script>
+  // 漢堡鍵切換手機選單
+document.getElementById("hamburger").addEventListener("click", () => {
+  document.getElementById("mobileMenu").classList.toggle("active");
+  document.getElementById("mobileMenuOverlay").classList.toggle("active");
+});
+
+// 點擊遮罩層關閉菜單
+document.getElementById("mobileMenuOverlay").addEventListener("click", () => {
+  document.getElementById("mobileMenu").classList.remove("active");
+  document.getElementById("mobileMenuOverlay").classList.remove("active");
+});
+
+// 手機選單中可點擊展開子選單
+document.querySelectorAll('.mobile-menu .menu-title[data-toggle]').forEach(title => {
+  title.addEventListener('click', () => {
+    const submenuId = title.getAttribute('data-toggle');
+    const submenu = document.getElementById(submenuId);
+    if (submenu) {
+      submenu.classList.toggle('active');
+    }
+  });
+});
+</script>
+
+
+
+
+<!-- 首頁照片輪播 -->
+<header>
+  <!-- 首頁照片輪播速度 -->
+  <div id="heroCarousel" class="carousel slide carousel-fade" data-ride="carousel" data-interval="2500" data-pause="false">
+    <div class="carousel-inner">
+      <!-- Slide 1 -->
+      <div class="carousel-item active">
+        <img src="./img/院形象網頁用(南台).jpg" class="d-block w-100" alt="Slide 1">
+        <div class="carousel-caption d-none d-md-block">
+          <h1 class="display-4 font-weight-bold">PLAN. LAUNCH. GROW.</h1>
+          <p class="lead">We are team of talented designers making websites with Bootstrap</p>
+        </div>
+      </div>
+      <!-- Slide 2 -->
+      <div class="carousel-item">
+        <img src="./img/首頁照片.jpg" class="d-block w-100" alt="Slide 2">
+        <div class="carousel-caption d-none d-md-block">
+          <h1 class="display-4 font-weight-bold">Design. Inspire. Impact.</h1>
+          <p class="lead">Build stunning websites with speed and ease.</p>
+        </div>
+      </div>
+      <!-- Slide 3 -->
+      <div class="carousel-item">
+        <img src="./img/cover.jpg" class="d-block w-100" alt="Slide 3">
+        <div class="carousel-caption d-none d-md-block">
+          <h1 class="display-4 font-weight-bold">Innovate. Create. Deliver.</h1>
+          <p class="lead">Empowering digital creatives through technology.</p>
+        </div>
+      </div>
+    <!-- Slide 4 -->
+        <div class="carousel-item">
+        <img src="./img/74562_01 (1).jpg" class="d-block w-100" alt="Slide 3">
+        <div class="carousel-caption d-none d-md-block">
+          <h1 class="display-4 font-weight-bold">Innovate. Create. Deliver.</h1>
+          <p class="lead">Empowering digital creatives through technology.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Controls -->
+    <a class="carousel-control-prev" href="#heroCarousel" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#heroCarousel" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</header>
+
+
+
+<!-- Scripts -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  // Scroll detection for navbar background
+  window.addEventListener('scroll', function () {
+    const navbar = document.querySelector('.navbar');
+    if (window.scrollY > 50) {
+      navbar.classList.add('navbar-scrolled');
+    } else {
+      navbar.classList.remove('navbar-scrolled');
+    }
+  });
+</script>
+
+
+
+<!-- 關於我們 -->
+<section class="overview-section animate-on-scroll" id="about">
+  <h2 class="title">About CDD - College of Digital Design</h2>
+
+  <h4>Establishment and History</h4>
+  <p class="description">
+    The College of Digital Design was founded in 2005 to meet the growing 
+    industry demand for digital design talent. The idea began in 2002, 
+    and the college was created by combining three departments and two graduate 
+    programs from the College of Business :
+  </p>
+  <ul class="custom-list">
+  <li>Department of Information and Communication (IC)</li>
+  <li>Department of Multimedia and Entertainment Science (MES)</li>
+  <li>Department of Visual Communication Design (VC)</li>
+  <li>Department of Creative Product Design (CPD)</li>
+  <li>Department of Popular Music Industry (PMI)</li>
+  </ul>
+  <p class="description">
+    In 2006, we established the Graduate Institute of Digital Content and 
+    Animation Design. Four years later in 2010, the Department of Creative 
+    Product Design became an official department to support Taiwan's emerging 
+    industries and train skilled product design professionals.
+  </p>
+
+  <h4>Current Academic Structure</h4>
+  <p class="description">
+    Over the years, the College of Digital Design has continued to expand 
+    and evolve, adding new departments and programs to meet the changing demands
+    of the digital design industry. The college now comprises multiple academic 
+    units that cover various aspects of digital design, multimedia, and creative technologies.
+  </p>
+
+  <h4>Excellence in Competition - Vision Get Wild Award</h4>
+  <p class="description">
+    The College of Digital Design has achieved remarkable success in Taiwan's most 
+    prestigious digital content competition - the Vision Get Wild Award (放視大賞). 
+    Southern Taiwan University of Science and Technology has repeatedly won the "Best School 
+    of the Year" award at Vision Get Wild, demonstrating the exceptional quality of education 
+    and student achievements in digital design fields.
+  </p>
+  <h6>Notable Achievements :</h6>
+  <ul class="custom-list">
+  <li>2023 : Southern Taiwan University of Science and Technology once again won the "Best School of the Year" award</li>
+  <li>Multiple years of consistent recognition as top performer in national digital design competitions</li>
+  <li>Students regularly receive gold, silver, and bronze awards across various categories including game design, animation, and multimedia</li>
+  </ul>
+
+  <h4>Educational Excellence and Recognition</h4>
+  <p class="description">
+    The College of Digital Design departments have received IEET (Institute of Engineering Education Taiwan) accreditation 
+    for engineering and technology education, ensuring that educational quality meets international standards.
+  </p>
+
+  <h4>Mission and Vision</h4>
+  <h6>The College of Digital Design is committed to :</h6>
+  <ul class="custom-list">
+  <li><strong>Innovation and Creativity</strong> : Fostering innovative thinking and creative problem-solving abilities</li>
+  <li><strong>Technical Excellence</strong> : Combining theoretical knowledge with practical skills development</li>
+  <li><strong>Industry Integration</strong> : Maintaining close partnerships with industry for internships and employment opportunities</li>
+  <li><strong>International Perspective</strong> : Developing students' global competitiveness and international outlook</li>
+  </ul>
+
+  <h4>Future Development</h4>
+  <p class="description">
+    As we continue to advance in the digital age, the College of Digital Design remains at the forefront of technological innovation 
+    and creative education, preparing the next generation of digital design professionals to lead Taiwan's creative industries into 
+    the future.
+  </p>
+
+</section>
+
+
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target); // 顯示一次就停止觀察
+        }
+      });
+    }, {
+      threshold: 0.1
+    });
+
+    document.querySelectorAll('.animate-on-scroll').forEach(el => {
+      observer.observe(el);
+    });
+  </script>
+</script>
+
+
+
+
+<!-- 各系icon -->
+<div class="button-group animate-on-scroll" id="icon">
+  <div class="tab-button active" data-tab="tab1">
+    <img src="./img/資傳icon.png" class="icon" alt="icon1">
+    <span>Department of Information and Communication</span>
+  </div>
+  <div class="tab-button" data-tab="tab2">
+    <img src="./img/視傳icon.png" class="icon" alt="icon2">
+    <span>Visual Communication Design</span>
+  </div>
+  <div class="tab-button" data-tab="tab3">
+    <img src="./img/多樂icon.png" class="icon" alt="icon3">
+    <span>Multimedia and Entertainment Science</span>
+  </div>
+  <div class="tab-button" data-tab="tab4">
+    <img src="./img/產設icon.png" class="icon" alt="icon4">
+    <span>Creative Product Design</span>
+  </div>
+  <div class="tab-button" data-tab="tab5">
+    <img src="./img/流音icon.png" class="icon" alt="icon5">
+    <span>Popular Music Industry Dept</span>
+  </div>
+</div>
+
+<div class="tab-content-wrapper animate-on-scroll">
+  <div class="tab-content active" id="tab1">
+    <div class="content-text">
+      <h2>Introduction</h2>
+      <p>The department offers a broad and varied program covering all areas of information and digital communication, 
+        focusing on a variety of aspects ranging from communications, digital content creation, and theory and methodology 
+        of information communication to the technology itself. The department strives to meet the specific academic needs of 
+        all our students and the challenging demands of the competitive information industry and digital media markets. 
+        With this in mind, the department is equipped with a high-end Digital Linear and Non-linear Editing Center, a Multi-media 
+        Animation Design Center, and a state-of-the-art Virtual Recording Studio, Digital Audio Broadcasting Station and Digital 
+        Audio Recording Center. The department houses one of the best information and digital communication production facilities in southern Taiwan.</p>
+      <a href="UDIC.html"  class="link-button">Learn more></a>
+    </div>
+    <div class="content-image">
+      <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d" alt="Image 1">
+    </div>
+  </div>
+  <div class="tab-content" id="tab2">
+    <div class="content-text">
+      <h2>Introduction</h2>
+      <p>We offer BFA and MA degrees in Visual Communication Design, which include Graphic Design, Interaction Design, Animation Design, 
+        and Industrial Design. At the graduate school, we encourage practical-oriented research so that students can integrate seamlessly
+        with and make valuable practical contributions to industry in the future.</p>
+      <a href="https://vc.stust.edu.tw/en/node/Programs_3" target="_blank" class="link-button">Learn more></a>
+    </div>
+    <div class="content-image">
+      <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f" alt="Image 2">
+    </div>
+  </div>
+  <div class="tab-content" id="tab3">
+    <div class="content-text">
+      <h2>Introduction</h2>
+      <p>The Department of Multimedia and Entertainment Science is a top-tier training institute for game and animation professionals 
+         in East Asia, offering comprehensive four-year and graduate programs. Over the past 20 years, our outstanding graduates have found 
+         positions in many renowned digital media companies. "South Taiwan Doluo Department" is highly regarded as a strong industry support.
+         Our expertise includes game design, storytelling, art design, programming, AI creation, 2D animation, 3D animation, digital music, 
+         and visual effects, enabling students to grow in a dynamic learning atmosphere influenced by ACG subcultures.</p>
+      <a href="https://mes.stust.edu.tw/en/node/facility" target="_blank" class="link-button">Learn more></a>
+    </div>
+    <div class="content-image">
+      <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c" alt="Image 3">
+    </div>
+  </div>
+  <div class="tab-content" id="tab4">
+    <div class="content-text">
+      <h2>Introduction</h2>
+      <p>Our university, selected by the Ministry of Education as a model technological institution, boasts a clear educational vision, 
+         strong funding, and a complete academic system. Our department features expert faculty with deep design experience across various
+         product design fields, excelling in teaching, research, and industry collaboration.We provide dedicated facilities for hands-on 
+         design and research, fully equipped with advanced software and hardware. With an excellent learning environment and consistently outstanding
+         student performance, our program ranks among Taiwan’s top in product design education.Our achievements include prestigious international 
+         awards such as the iF Design Award, Red Dot Design Award, Good Design Award (Japan), DNA Paris Design Awards, IDA, IBDA (Busan), and Taiwan’s 
+         Golden Pin Design Award—highlighting our strength in innovation and design excellence.
+</p>
+      <a href="https://cpd.stust.edu.tw/en" target="_blank" class="link-button">Learn more></a>
+    </div>
+    <div class="content-image">
+      <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d" alt="Image 4">
+    </div>
+  </div>
+  <div class="tab-content" id="tab5">
+    <div class="content-text">
+      <h2>Introduction</h2>
+      <p>The Popular Music Industry Department at STUST is Taiwan’s pioneer in training pop music professionals with creative talent and global vision. 
+        The program focuses on music creation and performance, event planning and management, recording and post-production, and stage lighting and sound 
+        engineering. Students can specialize in either Music Creation and Performance or Audio and Stage Production, supported by performing arts courses 
+        to prepare for success in the pop music industry.</p>
+      <a href="https://pmi.stust.edu.tw/en" target="_blank" class="link-button">Learn more></a>
+    </div>
+    <div class="content-image">
+      <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c" alt="Image 5">
+    </div>
+  </div>
+</div>
+
+<script>
+  const buttons = document.querySelectorAll('.tab-button');
+const contents = document.querySelectorAll('.tab-content');
+
+buttons.forEach(button => {
+  button.addEventListener('click', () => {
+    const target = button.dataset.tab;
+
+    buttons.forEach(b => b.classList.remove('active'));
+    button.classList.add('active');
+
+    contents.forEach(content => {
+      content.classList.remove('active');
+      if (content.id === target) content.classList.add('active');
+    });
+  });
+});
+
+
+/* 區塊往上浮現 */
+  const observer1 = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, {
+    threshold: 0.1
+  });
+
+  document.querySelectorAll('.animate-on-scroll').forEach(el => {
+    observer.observe(el);
+  });
+</script>
+
+
+
+
+<!-- 頁尾 -->
+ <div class="footer-overlay">
+    <div class="footer-content">
+
+      <!-- 聯絡我們 -->
+      <div class="footer-column">
+        <h3>Contact Us</h3>
+        <p>No. 1, Nantai Street, Yongkang District, Tainan City 71005, Taiwan</p>
+        <p>Tel: +886-6-2533131 ext.7001</p>
+        <p><a href="mailto:cdd@stust.edu.tw">cdd@stust.edu.tw</a></p>
+      </div>
+
+      <!-- 辦公時間 -->
+      <div class="footer-column">
+        <h3>Office Hours</h3>
+        <p>Monday to Friday, 8:30 AM – 5:30 PM</p>
+      </div>
+
+      <!-- 單位資訊 -->
+      <div class="footer-column">
+        <h3>College of Digital Design, STUST</h3>
+        <p>Brick Building W805</p>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    Copyright © Southern Taiwan University of Science and Technology All Rights Reserved.
+    ｜ <a href="https://www.stust.edu.tw/tc/privacy" target="_blank">Privacy Policy</a>
+  </div>
+</body>
+</html>
